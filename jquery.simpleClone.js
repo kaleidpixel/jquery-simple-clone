@@ -26,7 +26,8 @@
 				const count = $target.parent().children('.' + opts.targetClass).length + 1;
 
 				if (opts.cloneLimit === false || (typeof opts.cloneLimit === 'number' && count <= opts.cloneLimit)) {
-					let $clone = $target.clone(true);
+					const clone = $target[0].cloneNode(true);
+					let $clone = $(clone);
 					const rmvButton = document.createElement('button');
 					rmvButton.type = 'button';
 					rmvButton.className = opts.removeButtonClass === null ? $.fn.simpleClone.defaults.removeButtonClass : $.fn.simpleClone.defaults.removeButtonClass + ' ' + opts.removeButtonClass;
