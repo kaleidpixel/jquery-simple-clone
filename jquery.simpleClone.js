@@ -5,7 +5,7 @@
  * @author     KUCKLU
  * @license    Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  * @copyright  (c) 2022 KUCKLU
- * @version    1.1.2
+ * @version    1.1.3
  */
 (function ($) {
 	'use strict';
