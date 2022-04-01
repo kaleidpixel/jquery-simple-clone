@@ -4,7 +4,7 @@ This jQuery Plugin is a simple plugin that clones the HTML Dom Element.
 
 # How To Install
 
-1. Put `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>`.
+1. Put `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>`.
 2. Put `<script src="/assets/js/jquery.simpleClone.min.js"></script>` after jQuery library.
 3. Done.
 
