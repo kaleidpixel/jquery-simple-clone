@@ -5,7 +5,7 @@
  * @author     KUCKLU
  * @license    Licensed under MIT (http://www.opensource.org/licenses/mit-license.php)
  * @copyright  (c) 2022 KUCKLU
- * @version    1.1.3
+ * @version    1.1.2
  */
 (function ($) {
 	'use strict';
@@ -26,8 +26,7 @@
 				const count = $target.parent().children('.' + opts.targetClass).length + 1;
 
 				if (opts.cloneLimit === false || (typeof opts.cloneLimit === 'number' && count <= opts.cloneLimit)) {
-					const clone = $target[0].cloneNode(true);
-					let $clone = $(clone);
+					let $clone = $target.clone(true);
 					const rmvButton = document.createElement('button');
 					rmvButton.type = 'button';
 					rmvButton.className = opts.removeButtonClass === null ? $.fn.simpleClone.defaults.removeButtonClass : $.fn.simpleClone.defaults.removeButtonClass + ' ' + opts.removeButtonClass;
