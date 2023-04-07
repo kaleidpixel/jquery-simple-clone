@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>jQuery simple clone plugin</title>
+</head>
+<body>
+<form action="#" method="post">
+	<div>
+		<div class="simpleClone-clnElem">
+			<input type="text" name="sample[]" value="">
+		</div>
+	</div>
+	<div class="simpleClone-btnWrap">
+		<button type="button" class="addBtn">
+			+ Add
+		</button>
+	</div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./jquery.simpleClone.min.js"></script>
+<script>
+	(function ($) {
+		'use strict';
+
+		$('.addBtn').simpleClone({
+			copyValue: false,
+			cloneLimit: 5
+		});
+	})(jQuery);
+</script>
+</body>
+</html>
